@@ -3,7 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://kwinkich.github.io/HolidayCountdown",
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -17,6 +20,7 @@
     "@types/react-router-dom": "^5.3.3",
     "font-awesome": "^4.7.0",
     "fontawesome": "^5.6.3",
+    "gh-pages": "^6.0.0",
     "moment": "^2.29.4",
     "momentjs": "^2.0.0",
     "react": "^18.2.0",
