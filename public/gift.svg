@@ -1,0 +1,16 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    :root {
+      --icon-color: #ffffff; 
+    }
+
+    path {
+      stroke: var(--icon-color);
+    }
+  </style>
+<path d="M20.7598 12.1626V22.1626H4.75977V12.1626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.7598 7.1626H2.75977V12.1626H22.7598V7.1626Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.7598 22.1626V7.1626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.7598 7.1626H8.25977C7.59672 7.1626 6.96084 6.89921 6.492 6.43036C6.02316 5.96152 5.75977 5.32564 5.75977 4.6626C5.75977 3.99956 6.02316 3.36367 6.492 2.89483C6.96084 2.42599 7.59672 2.1626 8.25977 2.1626C11.7598 2.1626 12.7598 7.1626 12.7598 7.1626Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.7598 7.1626H17.2598C17.9228 7.1626 18.5587 6.89921 19.0275 6.43036C19.4964 5.96152 19.7598 5.32564 19.7598 4.6626C19.7598 3.99956 19.4964 3.36367 19.0275 2.89483C18.5587 2.42599 17.9228 2.1626 17.2598 2.1626C13.7598 2.1626 12.7598 7.1626 12.7598 7.1626Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

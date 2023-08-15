@@ -1,0 +1,426 @@
+* {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+}
+
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+a {
+  background-color: transparent;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+input,
+button {
+  font-weight: inherit;
+}
+
+body {
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
+  background-color: var(--bgcolor);
+}
+
+.cursor {
+  position: fixed;
+  top: -29px;
+  left: -29px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid var(--text-color);
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.1s ease;
+}
+
+:root {
+  --bgcolor: #1d1d1d;
+  --text-color: #c194de;
+  --text-color-sec: ;
+  --confetti: ;
+}
+
+::selection {
+  background: var(--confetti);
+}
+
+::-moz-selection {
+  background: var(--confetti);
+}
+
+::-webkit-selection {
+  background: var(--confetti);
+}
+
+.presentContainer {
+  max-width: 900px;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20% 30px 0px 30px;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 50px;
+  color: var(--text-color);
+}
+
+.containerCount {
+  display: flex;
+  justify-content: center;
+  font-size: 34px;
+  color: var(--text-color-sec);
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+  color: var(--text-color);
+}
+
+.item {
+  color: var(--text-color);
+  position: relative;
+  padding: 5px 15px;
+  border: 2px solid var(--text-color);
+  font-size: 30px;
+  overflow: hidden;
+  z-index: 2;
+  transition: all 0.4s ease-in-out;
+}
+
+.item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  background-color: var(--text-color);
+  transition: all 0.4s ease-in-out;
+}
+
+.item:hover::before {
+  width: 100%;
+}
+
+.item:hover {
+  color: var(--bgcolor);
+  box-shadow: 0px 0px 35px var(--text-color);
+}
+
+.exit {
+  position: relative;
+  overflow: hidden;
+  background: none;
+  padding: 15px 30px;
+  border: 2px solid var(--text-color);
+  font-size: 18px;
+  color: var(--text-color);
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+
+.exit::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  background-color: var(--text-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.exit:hover::before {
+  width: 100%;
+}
+
+.exit:hover {
+  color: var(--bgcolor);
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bgcolor);
+  padding: 20px;
+  color: var(--text-color);
+  border-radius: 5px;
+}
+
+.modal h2 {
+  margin-bottom: 14px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.modal p {
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.modalButtons button {
+  margin: 0 10px;
+  padding: 10px 30px;
+  background: none;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.input {
+  max-width: 200px;
+  border: 2px solid var(--text-color);
+  background: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.selectContainer {
+  display: flex;
+  max-width: 900px;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 15% 30px 0px 30px;
+  color: #fff;
+}
+
+.selectTitle {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 120%;
+}
+
+.selectTitle span {
+  color: var(--text-color);
+}
+
+.selectLabel {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 120%;
+}
+
+.selectInputTitle {
+  padding: 10px 0 10px 10px;
+}
+
+.selectInputTitle::placeholder {
+  font-size: 14px;
+  color: #d9d9d9;
+}
+
+.selectInputDate {
+  padding: 10px 10px 10px 10px;
+}
+
+.selectInputDate::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.selectInputTime {
+  padding: 10px 10px 10px 10px;
+}
+
+.selectInputTime::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.selectInputEndTitle {
+  padding: 10px 10px 10px 10px;
+}
+
+.selectInputEndTitle::placeholder {
+  font-size: 14px;
+  color: #d9d9d9;
+}
+
+.selectBtn {
+  position: relative;
+  background: none;
+  border: 2px solid var(--text-color);
+  font-size: 18px;
+  padding: 15px 35px;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.selectBtn::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: 0;
+  background-color: var(--text-color);
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+
+.selectBtn:hover::before {
+  width: 100%;
+}
+
+.selectBtn:hover {
+  color: #1d1d1d;
+}
+
+.blockIcon {
+  margin-bottom: 40px;
+}
+
+.link {
+  font-size: 32px;
+  color: var(--text-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+  font-size: 38px;
+}
+
+.link:not(:last-child) {
+  margin-right: 14px;
+}
+
+@media (max-width: 1100px) {
+  .cursor {
+    display: none;
+  }
+}
+
+@media (max-width: 920px) {
+  .cursor {
+    display: none;
+  }
+
+  .containerCount {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 630px) {
+  .selectInputEndTitle {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 470px) {
+  .selectTitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .selectInputTitle {
+    margin-top: 10px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .selectTitle {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 370px) {
+  .input {
+    margin-top: 10px;
+  }
+}
