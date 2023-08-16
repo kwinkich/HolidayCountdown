@@ -130,9 +130,6 @@ function MainPage() {
 						<a href='https://github.com/kwinkich' className={styles.link} target='_blank'>
 							<FontAwesomeIcon icon={faGithub} />
 						</a>
-						<a href='https://instagram.com/w.https.9fset?igshid=MzNlNGNkZWQ4Mg==' className={styles.link} target='_blank'>
-							<FontAwesomeIcon icon={faInstagram} />
-						</a>
 					</div>
 				</div>
             )
