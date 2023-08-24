@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../index.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import Input from '../components/Input/Input';
 import { useNavigate } from 'react-router-dom';
 
