@@ -2,7 +2,7 @@ import styles from '../index.module.css';
 import { useNavigate } from 'react-router-dom';
 
 
-function ModalWindow () {
+const ModalWindow = () => {
 
     const navigate = useNavigate();
 

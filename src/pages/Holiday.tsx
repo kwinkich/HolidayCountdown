@@ -3,8 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import styles from '../index.module.css';
 import moment from 'moment';
 
-function HolidayPage() {
-    
+const HolidayPage = () => {
     const navigate = useNavigate();
 
     const handleButtonClick = () => {

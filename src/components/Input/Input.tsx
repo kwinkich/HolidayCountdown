@@ -9,19 +9,24 @@ interface InputProps {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-function Input(props: InputProps) {
-  const { type, classNameInput, id, placeholder, value, onChange } = props;
-
-  return (
-    <input
-      type={type}
-      className={`${styles.input} ${styles[classNameInput]}`}
-      id={id}
-      placeholder={placeholder}
-      value={value}
-      onChange={onChange}
-    />
-  );
+const Input:React.FC<InputProps> = ({
+    type,
+    classNameInput,
+    id,
+    placeholder,
+    value,
+    onChange
+}) => {
+    return(
+        <input
+            type={type}
+            className={`${styles.input} ${styles[classNameInput]}`}
+            id={id}
+            placeholder={placeholder}
+            value={value}
+            onChange={onChange}
+        />
+    )
 }
 
 export default Input;

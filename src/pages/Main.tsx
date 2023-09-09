@@ -5,7 +5,7 @@ import { faGithub, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import Input from '../components/Input/Input';
 import { useNavigate } from 'react-router-dom';
 
-function MainPage() {
+const MainPage = () => {
  
         const navigate = useNavigate();
  
