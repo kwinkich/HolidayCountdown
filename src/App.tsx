@@ -7,11 +7,11 @@ function App() {
 
   return (
     <BrowserRouter>
-         <Routes>
+          <Routes>
             <Route path="/" element={<MainPage></MainPage>} />
             <Route path="/holiday" element={<HolidayPage></HolidayPage>} />
             <Route path="/modal" element={<ModalWindow></ModalWindow>} />
-         </Routes>   
+          </Routes>   
     </BrowserRouter>
   )
 }
